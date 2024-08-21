@@ -31,3 +31,4 @@ console.log(abc.trim());
 
 const def = "naamhainsiddhu";
 console.log(abc.replace("ity", "prad"));
+console.log(abc.split(" "));
