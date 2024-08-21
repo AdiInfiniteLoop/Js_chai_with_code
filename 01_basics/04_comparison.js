@@ -10,3 +10,5 @@ console.log(null >= 0); //true
 In javascript, == doesn't converts 'null' into 'zero'. as null == undefined
 but in case of '>=' the null is coerced to zero
 */
+
+/*  '===' is strict check that checks values along with the datatypes */
