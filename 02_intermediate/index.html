@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <style>
+    .bg-color {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <body class="bg-color">
+    <div id="main-body">
+      <h1 class="heading">DOM Learning</h1>
+      <h2 class="heading">DOM Learning</h2>
+      <h3 class="heading">DOM Learning</h3>
+      <h4 class="heading">DOM Learning</h4>
+      <h5 class="heading">DOM Learning</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+        earum.
+      </p>
+
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+    </div>
+    <footer style="position: fixed; bottom: 30px">
+      getElementsByClassName: This method returns an HTMLCollection, which is a
+      collection of elements that have the specified class name. Even if only
+      one element has the class, it's still returned as part of a collection.
+    </footer>
+  </body>
+</html>
+
+<!-- Notes
+document.getElementById('main-body') 
+<div id=​"main-body">​…​</div>​
+document.getElementById('main-body').id
+'main-body'
+document.getElementById('main-body').className
+''
+document.getElementById('main-body').class
+undefined
+document.getElementById('main-body').className
+''
+document.getElementById('main-body').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('main-body').getAttribute(id)
+VM433:1 Uncaught ReferenceError: id is not defined
+    at <anonymous>:1:51
+(anonymous) @ VM433:1
+document.getElementById('main-body').getAttribute('id')
+'main-body'
+document.getElementById('main-body').getAttribute('class')
+null
+document.getElementById('main-body').setAttribute('class', 'rest')
+undefined
+document.getElementById('main-body').class
+undefined
+document.getElementById('main-body').className
+'rest'
+const title = document.getElementById('main-body') 
+undefined
+title.style.backgroundColor = "red
+VM796:1 Uncaught SyntaxError: Invalid or unexpected token
+title.style.backgroundColor = "red"
+'red'
+title.style.backgroundColor = "black"
+'black'
+title.innerHTML
+'\n      <h1 class="heading">DOM Learning</h1>\n      <p>\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,\n        earum.\n      </p>\n    '
+title.innerText
+'DOM Learning\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, earum.'
+title.textContent
+'\n      DOM Learning\n      \n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,\n        earum.\n      \n    '
+    title.innserT
+undefined
+            title.innerText
+'DOM Learning\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, earum.'
+title.setAttribute('class', 'shinu-bantai')
+undefined
+document.getElementsByClassName('shinu-bantai').style.backgroundColor('red')
+VM5516:1 Uncaught TypeError: Cannot read properties of undefined (reading 'backgroundColor')
+    at <anonymous>:1:54
+(anonymous) @ VM5516:1
+document.getElementsByClassName('shinu-bantai')
+HTMLCollection [div#main-body.shinu-bantai, main-body: div#main-body.shinu-bantai]
+const title = document.getElementsByClassName('shinu-bantai')
+undefined
+title.style.backgroundColor = "red
+VM5683:1 Uncaught SyntaxError: Invalid or unexpected token
+
+-->
