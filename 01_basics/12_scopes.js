@@ -16,7 +16,7 @@ function one() {
     console.log(username);
   }
 
-  console.log("youo");
+  console.log("youo ");
   two();
 }
 
