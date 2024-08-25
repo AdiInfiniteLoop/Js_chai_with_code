@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chai Aur Code</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+
+  <script>
+    const parent = document.querySelector(".parent");
+    console.log(parent);
+    // console.log(parent.children[0].innerHTML);
+    // for (let i = 0; i < parent.children.length; ++i) {
+    //   parent.children[i].style.color = "wheat";  //querSelector is a heavy operation for the DOM
+    // }
+
+    /* Therefore, by using only one element we can get all the required elements */
+    const dayOne = parent.firstElementChild;
+    console.log(parent.lastElementChild);
+    console.log(dayOne);
+
+    console.log(
+      parent.childNodes
+    ); /* The child Nodes contains eveery little elements---Node List */
+  </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur code</title>
+  </head>
+  <body style="background-color: black; color: white"></body>
+
+  <script>
+    /* Create an element using DOM */
+    const divele = document.createElement("div");
+    divele.className = "div-class";
+    divele.id = Math.round(Math.random() * 10) + 1;
+    divele.setAttribute("title", "gen-title-DOM"); //preferred
+
+    console.log(divele);
+    //To show the div in the page we have to attach it.
+    //We use appendChild
+    const text = document.createTextNode("Soma Doma");
+    divele.appendChild(text);
+    document.body.appendChild(divele);
+
+    //+++++++++++++++++++++++++++++++++++++++===
+    const elementCreation = (nameofele, xlas, txt, colour) => {
+      const ele = document.createElement(nameofele); //1.  createElement
+      ele.setAttribute("class", xlas);
+      ele.style.color = colour;
+      const text = document.createTextNode(txt); //2.createTextNode
+      ele.appendChild(text); //3.append text in element
+      document.body.appendChild(ele); //4.append element in body
+    };
+    elementCreation("h1", "heading-1", "Hello Ji!", "blue");
+    //+++++++++++++++++++++++++++++++++++++++++++===
+  </script>
+</html>

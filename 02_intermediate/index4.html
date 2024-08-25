@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+
+  <script>
+    const addLanguage = (lang) => {
+      //create textNode is optimized, much better than innerHTML
+      const ele = document.createElement("li");
+      ele.appendChild(document.createTextNode(lang));
+      document.querySelector(".language").appendChild(ele);
+    };
+    addLanguage("java");
+
+    //EDIT
+    const toreplace = document.querySelector("li:nth-child(2)");
+    const newli = document.createElement("li");
+    newli.textContent = "bantai";
+    toreplace.replaceWith(newli);
+
+    //remove
+
+    const firstLang = document.querySelector("li:nth-child(1)"); //1-based indexing``
+    firstLang.remove();
+  </script>
+</html>
